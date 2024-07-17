@@ -1,4 +1,6 @@
-public class Primitives {
+package Primitives;
+
+public class IntegerPrimitives {
     public static void main(String[] args) {
         /* NUMERIC PRIMITIVES PRACTICE*/
         byte numberByte = 6;

@@ -1,3 +1,5 @@
+package Primitives;
+
 public class FloatPrimitives {
     public static void main(String[] args) {
         /* MORE NUMERIC PRIMITIVES PRACTICE*/
