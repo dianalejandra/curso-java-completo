@@ -25,10 +25,12 @@ public class TypeConversion {
         String someStrNumber = Integer.toString(someIntNumber);
         System.out.println("someStrNumber = " + someStrNumber);
 
-        someStrNumber = String.valueOf(someIntNumber);
+        someStrNumber = String.valueOf(someIntNumber + 10);
         System.out.println("someStrNumber = " + someStrNumber);
 
-
+        double otherRealDouble = 1.23456;
+        String otherRealStr = Double.toString(otherRealDouble);
+        System.out.println("otherRealStr = " + otherRealStr);
 
 
     }
