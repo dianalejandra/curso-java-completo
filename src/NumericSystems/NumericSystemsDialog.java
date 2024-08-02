@@ -1,3 +1,5 @@
+package NumericSystems;
+
 import javax.swing.*;
 
 public class NumericSystemsDialog {

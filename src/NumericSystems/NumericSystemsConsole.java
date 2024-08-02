@@ -1,4 +1,5 @@
-import javax.swing.*;
+package NumericSystems;
+
 import java.util.Scanner;
 
 public class NumericSystemsConsole {
