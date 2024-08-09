@@ -1,7 +1,9 @@
 package Strings;
 
-public class StringsPractice {
+public class PerformanceTestConcatenation {
     public static void main(String[] args) {
         
+
+
     }
 }
