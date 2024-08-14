@@ -55,7 +55,5 @@ public class StringMethods {
         // with .trim we remove white spaces
         System.out.println("   tongue Twisters   ");
         System.out.println("   tongue Twisters   ".trim());
-
-
     }
 }
