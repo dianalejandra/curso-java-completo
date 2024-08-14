@@ -7,6 +7,5 @@ public class FileExtension {
         int index = file.lastIndexOf(".");
         System.out.println("char length = " + file.length());
         System.out.println("file extension = " + file.substring(index+1));
-
     }
 }
