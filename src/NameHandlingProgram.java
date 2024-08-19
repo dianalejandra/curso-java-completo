@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class NameHandlingProgram {
     public static void main(String[] args) {
         Scanner inputName1 = new Scanner(System.in);
-        System.out.println("Please give us one name of one of your friends: ");
+        System.out.println("Please give us one name of one of your friends/family members: ");
         String name1 = inputName1.nextLine();
 
         Scanner inputName2 = new Scanner(System.in);
@@ -22,6 +22,8 @@ public class NameHandlingProgram {
         Scanner inputName3 = new Scanner(System.in);
         System.out.println("Give us another name: ");
         String name3 = inputName3.nextLine();
+
+        System.out.println(name1 + name2 + name3);
 
 
     }
