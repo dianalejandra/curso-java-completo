@@ -6,3 +6,4 @@
 
 ### All developed practice exercises are grouped in the Exercises folder. Detailed list of each one are:
 #### - BillDetail.java - Practice of variables: Conversion of primitive types.
+#### - NameHandlingProgram.java - Practice of strings: Handling changes in specific characters of a string, use of common sting methods.
