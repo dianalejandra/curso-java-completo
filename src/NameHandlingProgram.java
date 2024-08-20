@@ -24,7 +24,6 @@ public class NameHandlingProgram {
         System.out.println("Give us another name: ");
         String name3 = inputName3.nextLine();
 
-
         StringBuilder modifiedName1 = new StringBuilder();
         String n1FirstLetter = String.valueOf(name1.toUpperCase().charAt(1));
         modifiedName1.append(n1FirstLetter).append(".").append(name1.substring(name1.length()-2).toLowerCase());
