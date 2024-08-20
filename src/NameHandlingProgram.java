@@ -12,29 +12,19 @@ import java.util.Scanner;
 
 public class NameHandlingProgram {
     public static void main(String[] args) {
-        Scanner inputName1 = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
+
         System.out.println("Please give us one name of one of your friends/family members: ");
-        String name1 = inputName1.nextLine();
+        String name1 = keyboard.nextLine();
+        String modifiedName1 = name1.toUpperCase().charAt(1) + "." + name1.substring(name1.length() - 2);
 
-        Scanner inputName2 = new Scanner(System.in);
         System.out.println("Give us another name: ");
-        String name2 = inputName2.nextLine();
+        String name2 = keyboard.nextLine();
+        String modifiedName2 = name2.toUpperCase().charAt(1) + "." + name2.substring(name2.length() - 2);
 
-        Scanner inputName3 = new Scanner(System.in);
         System.out.println("Give us another name: ");
-        String name3 = inputName3.nextLine();
-
-        StringBuilder modifiedName1 = new StringBuilder();
-        String n1FirstLetter = String.valueOf(name1.toUpperCase().charAt(1));
-        modifiedName1.append(n1FirstLetter).append(".").append(name1.substring(name1.length()-2).toLowerCase());
-
-        StringBuilder modifiedName2 = new StringBuilder();
-        String n2FirstLetter = String.valueOf(name2.toUpperCase().charAt(1));
-        modifiedName2.append(n2FirstLetter).append(".").append(name2.substring(name2.length()-2).toLowerCase());
-
-        StringBuilder modifiedName3 = new StringBuilder();
-        String n3FirstLetter = String.valueOf(name3.toUpperCase().charAt(1));
-        modifiedName3.append(n3FirstLetter).append(".").append(name3.substring(name3.length()-2).toLowerCase());
+        String name3 = keyboard.nextLine();
+        String modifiedName3 = name3.toUpperCase().charAt(1) + "." + name3.substring(name3.length() - 2);
 
         System.out.println(modifiedName1 + "_" + modifiedName2 + "_" + modifiedName3);
     }
