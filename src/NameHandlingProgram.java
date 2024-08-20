@@ -9,6 +9,7 @@ Finally, print the three new names separated by underscores (as a single variabl
 * */
 import java.util.Scanner;
 
+
 public class NameHandlingProgram {
     public static void main(String[] args) {
         Scanner inputName1 = new Scanner(System.in);
@@ -23,8 +24,19 @@ public class NameHandlingProgram {
         System.out.println("Give us another name: ");
         String name3 = inputName3.nextLine();
 
-        System.out.println(name1 + name2 + name3);
 
+        StringBuilder modifiedName1 = new StringBuilder();
+        String n1FirstLetter = String.valueOf(name1.toUpperCase().charAt(1));
+        modifiedName1.append(n1FirstLetter).append(".").append(name1.substring(name1.length()-2).toLowerCase());
 
+        StringBuilder modifiedName2 = new StringBuilder();
+        String n2FirstLetter = String.valueOf(name2.toUpperCase().charAt(1));
+        modifiedName2.append(n2FirstLetter).append(".").append(name2.substring(name2.length()-2).toLowerCase());
+
+        StringBuilder modifiedName3 = new StringBuilder();
+        String n3FirstLetter = String.valueOf(name3.toUpperCase().charAt(1));
+        modifiedName3.append(n3FirstLetter).append(".").append(name3.substring(name3.length()-2).toLowerCase());
+
+        System.out.println(modifiedName1 + "_" + modifiedName2 + "_" + modifiedName3);
     }
 }
