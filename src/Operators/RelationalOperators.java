@@ -28,6 +28,15 @@ public class RelationalOperators {
 
         boolean b7 = i < j;
         System.out.println("b7 = " + b7);
+        
+        boolean b8 = l >= k;
+        System.out.println("b8 = " + b8);
+        
+        boolean b9 = l <= k;
+        System.out.println("b9 = " + b9);
+
+        /* We evaluate the right side, then we assign the relation to a value with '=' symbol
+        * The preceden e of the operators are important*/
 
         
         
