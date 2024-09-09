@@ -20,6 +20,5 @@ public class LogicalOperators {
         boolean b3 = i == j && (k > l || m == false);
         System.out.println("b3 = " + b3);
 
-
     }
 }
