@@ -2,12 +2,26 @@ import java.util.Scanner;
 
 public class ArrayLogin {
     public static void main(String[] args) {
+        /* An Array allows us to store several data in the same object. Always of the same data type */
 
-        String username = "Diana";
-        String password = "123456";
+        /*
+        String[] usernames = new String[3];
+        String[] passwords = new String[3];
 
-        String username2 = "admin";
-        String password2 = "123456";
+        usernames [0] = "Diana";
+        passwords [0] = "123456";
+
+        usernames [1] = "admin";
+        passwords [1] = "123456";
+
+        usernames [2] = "bob";
+        passwords [2] = "456789";
+         */
+
+        // Other way to declare arrays is like this :
+
+        String[] usernames = {"Diana", "admin", "bob"};
+        String[] passwords = {"123456", "123456", "456789"};
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -19,18 +33,18 @@ public class ArrayLogin {
 
         boolean isAuth = false;
 
-        if(
-                (username.equals(user) &&  password.equals(pw)) ||
-                        (username2.equals(user) && password2.equals(pw)) ){
-            isAuth = true;
-        } else {
-            System.out.println("User or password are invalid.");
+        for (int i = 0; i < usernames.length; i++) {
+            if( (usernames[i].equals(user) &&  passwords[i].equals(pw))  ){
+                isAuth = true;
+                break;
+            }
         }
 
         if(isAuth){
             System.out.println("Welcome ".concat(user).concat("!"));
         } else {
-            System.out.println("I am sorry, you require authentication.");
+            System.out.println("User or password are invalid.");
+            System.out.println("Sorry, you require authentication.");
         }
     }
 }
