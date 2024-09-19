@@ -20,8 +20,7 @@ public class LogicalOperatorsLogin {
 
         boolean isAuth = false;
 
-        if(
-                (username.equals(user) &&  password.equals(pw)) ||
+        if( (username.equals(user) &&  password.equals(pw)) ||
                         (username2.equals(user) && password2.equals(pw)) ){
             isAuth = true;
         } else {
