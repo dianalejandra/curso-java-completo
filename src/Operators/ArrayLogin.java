@@ -36,17 +36,20 @@ public class ArrayLogin {
         boolean isAuth = false;
 
         for (int i = 0; i < usernames.length; i++) {
-            if( (usernames[i].equals(user) &&  passwords[i].equals(pw))  ){
+            isAuth = (usernames[i].equals(user) && passwords[i].equals(pw)) ? true: isAuth;
+            /*if( (usernames[i].equals(user) &&  passwords[i].equals(pw))  ){
                 isAuth = true;
                 break;
-            }
+            }*/
         }
 
-        if(isAuth){
+        String message = isAuth ? "Welcome ".concat(user).concat("!") : "User or password are invalid.\nSorry, you require authentication.";
+        System.out.println("message = " + message);
+        /*if(isAuth){
             System.out.println("Welcome ".concat(user).concat("!"));
         } else {
             System.out.println("User or password are invalid.");
             System.out.println("Sorry, you require authentication.");
-        }
+        }*/
     }
 }
