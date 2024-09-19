@@ -1,5 +1,4 @@
 package Operators;
-
 import java.util.Scanner;
 
 public class TernaryOperators {
@@ -41,8 +40,5 @@ public class TernaryOperators {
             state = "Denied";
         }
         */
-
-
-
     }
 }
