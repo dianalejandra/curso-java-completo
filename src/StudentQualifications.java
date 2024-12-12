@@ -31,7 +31,25 @@ public class StudentQualifications {
                 break;
             }
 
+            if (grade == 1){
+                gradeCounter1++;
+            } else {
+                if (grade > 5) {
+                    gradeCounterGreaterThan5++;
+                    sumGradesGreaterThan5 += grade;
+                } else if (grade < 4){
+                    gradeCounterLessThan4++;
+                    sumGradesLessThan4 += grade;
+                }
+            }
+            totalSum += grade;
         }
+        if (error) {
+            System.err.println("Error: you can't have grades with score 0. Program execution finalized.");
+            System.exit(1);
+        }
+        // we show the quantity on grades with score of 1
+        System.out.println("gradeCounter1 = " + gradeCounter1);
 
 
 
