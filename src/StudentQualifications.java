@@ -18,6 +18,21 @@ public class StudentQualifications {
         double sumGradesLessThan4 = 0; // sum of grades that are less than 4
         double totalSum = 0; // total sum of all grades
 
+        double averageSumGreaterThan5Grades, averageSumLessThan4Grades; // the averages of grades more than 5 and less than 4
+
+        boolean error = false;
+
+        for (int i = 0; i < 20; i++) {
+            System.out.println("Introduce a grade (between 1 and 7) Grade N" + (i +1) + ": ");
+            grade = keyboard.nextDouble();
+
+            if (grade == 0){
+                error = true;
+                break;
+            }
+
+        }
+
 
 
 
