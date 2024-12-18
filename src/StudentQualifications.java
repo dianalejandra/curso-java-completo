@@ -51,8 +51,24 @@ public class StudentQualifications {
         // we show the quantity on grades with score of 1
         System.out.println("gradeCounter1 = " + gradeCounter1);
 
+        // we work with the grades that are grater than 5
+        if (gradeCounterGreaterThan5 == 0){
+            System.out.println("We can't calculate the average of grades with a score of 5 or more.");
+        } else {
+            averageSumGreaterThan5Grades = sumGradesGreaterThan5 / gradeCounterGreaterThan5;
+            System.out.println("The average of grades grater than 5 is: " + averageSumGreaterThan5Grades);
+        }
 
+        // we work with the grades that are less than 4
+        if (gradeCounterLessThan4 == 0){
+            System.out.println("We can't calculate the average of grades with a score of 4 or less.");
+        } else {
+            averageSumLessThan4Grades = sumGradesLessThan4 / gradeCounterLessThan4;
+            System.out.println("The average of grades less than 4 is: " + averageSumLessThan4Grades);
+        }
 
-
+        // average of all grades
+        double allGradesAverage = totalSum / 20;
+        System.out.println("The average of all grades is: " + allGradesAverage);
     }
 }
