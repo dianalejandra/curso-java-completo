@@ -33,6 +33,5 @@ public class MultiplyTwoNumbers {
         }
 
         System.out.println("Result = " + result);
-
     }
 }
