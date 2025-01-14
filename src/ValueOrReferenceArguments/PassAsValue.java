@@ -1,6 +1,6 @@
 package ValueOrReferenceArguments;
 
-public class ValueArguments {
+public class PassAsValue {
     public static void main(String[] args) {
 
         Integer i = 10;
