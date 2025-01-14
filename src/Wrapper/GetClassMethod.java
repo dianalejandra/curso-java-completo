@@ -20,8 +20,17 @@ public class GetClassMethod {
 
         System.out.println("--------------------------------");
 
-        
+        Integer num = 34;
+        Class intClass = num.getClass();
+        Class objClass = intClass.getSuperclass().getSuperclass();
 
+        System.out.println("intClass.getName() = " + intClass.getName());
+        System.out.println("intClass.getPackage().getName() = " + intClass.getPackage().getName());
+        System.out.println("intClass.getSuperclass() = " + intClass.getSuperclass());
+        System.out.println("intClass.getSuperclass().getSuperclass() = " + objClass);
 
+        for(Method method : objClass.getMethods()){
+            System.out.println("method.getName() = " + method.getName());
+        }
     }
 }
