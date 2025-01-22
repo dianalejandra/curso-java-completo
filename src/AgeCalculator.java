@@ -31,7 +31,7 @@ public class AgeCalculator {
 
         // We can check if they haven't had their birthday yet this year
         if (currentDate.get(Calendar.MONTH) < dob.get(Calendar.MONTH) || (currentDate.get(Calendar.MONTH) == dob.get(Calendar.MONTH) && currentDate.get(Calendar.DAY_OF_MONTH) < dob.get(Calendar.DAY_OF_MONTH))){
-            age --;
+            age--;
         }
         return age;
     }
