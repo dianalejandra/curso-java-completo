@@ -3,6 +3,8 @@ package MathClass;
 public class MathClassExample {
     public static void main(String[] args) {
 
+        // Math class is composed by static methods that can't be instantiated. They are used to perform mathematical operations.
+
         int absolute = Math.abs(-3);
         System.out.println("absolute = " + absolute);
 
@@ -17,9 +19,13 @@ public class MathClassExample {
 
         double ceil = Math.ceil(3.5);
         System.out.println("ceil = " + ceil);
+
         double floor = Math.floor(3.5);
         System.out.println("floor = " + floor);
-        
+
+        long round = Math.round(Math.PI);
+        System.out.println("round = " + round);
+
 
     }
 }
