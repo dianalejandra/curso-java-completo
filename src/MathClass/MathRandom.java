@@ -21,6 +21,15 @@ public class MathRandom {
         System.out.println("random = " + random);
 
         Random randomObj = new Random();
+        int randomInt = randomObj.nextInt(7);
+        System.out.println("randomInt = " + randomInt);
 
+        // To generate random numbers within a range, for example between 15 and 25, we use the following formula:
+        int rangedInt = 15 + randomObj.nextInt(25-15+1);
+        System.out.println("rangedInt = " + rangedInt);
+
+        randomInt = randomObj.nextInt(colors.length);
+        System.out.println("randomInt = " + randomInt);
+        System.out.println("colors = " + colors[randomInt]);
     }
 }
